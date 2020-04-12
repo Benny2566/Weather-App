@@ -1,0 +1,6 @@
+.backgroundh {
+    width: calc(30% - (16.5px + (16.5px / 2)));
+    height: calc(100% - (16.5px * 2));
+    background-color: rgb(57,57,57);
+
+}

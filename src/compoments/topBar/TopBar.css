@@ -1,0 +1,55 @@
+.tbBackground {   
+    width: 100%;
+    height: 70px;
+    background-color: rgb(57,57,57);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elementBox {
+    flex: 0 1 1000px;
+    height: 52.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+
+.celsiusSwitchBack {
+    flex: 0 0 105px;
+    height: 100%;
+    background-color: rgb(33, 33, 33);
+}
+
+.searchBarBack {
+    flex: 0 1 807.5px;
+    height: 100%;
+    background-color: rgb(33, 33, 33);
+}
+
+.searchLine {
+    margin-top: 4px;
+    margin-left: 20px;
+    color: rgb(114, 114, 114);
+}
+
+.locationButtonBack {
+    flex: 0 0 52.5px;
+    height: 100%;
+    background-color: rgb(33, 33, 33);
+}
+
+.time {
+    margin-right: 20px;
+    margin-bottom: 22%;
+    color: white;
+    font-size: 50px;
+}
+
+.gap {
+    flex: 0 0 8.75px;
+    height: 100%;
+    background-color: rgb(57,57,57);
+}
+
