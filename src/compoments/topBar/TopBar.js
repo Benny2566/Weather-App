@@ -1,25 +1,35 @@
-import React from 'react'
-import CelsiusSwitch from './CelsiusSwitch'
-import LocationButton from './LocationButton'
-import SearchBar from './SearchBar'
-import Time from './Time'
-import './TopBar.css'
+import React, { useState } from "react";
+import CelsiusSwitch from "./CelsiusSwitch";
+import LocationButton from "./LocationButton";
+import EnterButton from "./EnterButton";
+//import SearchBar from "./SearchBar";
+import SearchBar from "../header/SearchBar";
+import Time from "./Time";
+import "./TopBar.css";
 
-function TopBar() {
+function TopBar(props) {
+  const [input, setInput] = useState();
 
-    return(
-        <div className = 'tbBackground'>
-            <div className = 'elementBox'>
-                <div className = 'gap' />
-                <CelsiusSwitch />
-                <div className = 'gap' />
-                <SearchBar />
-                <div className = 'gap' />
-                <LocationButton />
-                <div className = 'gap' />
-            </div>
-            <Time />
-        </div>
-    )
+  const handleInput = e => {
+    setInput(e.target.value);
+  };
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    props.handleSearch(input);
+  };
+
+  return (
+    <div className="tbBackground">
+      <div className="elementBox">
+        <SearchBar
+          input={input}
+          handleInput={handleInput}
+          handleSubmit={handleSubmit}
+        />
+      </div>
+      <Time />
+    </div>
+  );
 }
-export default TopBar
+export default TopBar;

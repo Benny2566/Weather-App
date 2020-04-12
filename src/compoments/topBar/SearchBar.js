@@ -1,13 +1,9 @@
-import React from 'react'
-import './TopBar.css'
+import React from "react";
+import "./TopBar.css";
+import EnterButton from "./EnterButton";
 
-function SearchBar() {
-
-    return(
-        <div className='searchBarBack'>
-            <h1 className='searchLine'>Search</h1>
-        </div>
-    )
+function SearchBar(props) {
+  return <input value={props.input} onChange={props.onChange} />;
 }
 
-export default SearchBar
+export default SearchBar;

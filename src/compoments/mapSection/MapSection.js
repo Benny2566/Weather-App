@@ -1,10 +1,10 @@
-import React from 'react';
-import './MapSection.css';
+import React from "react";
+import "./MapSection.css";
 
 function MapSection() {
   return (
-    <div className='backgroundh'>
-      
+    <div className="map-section content-box">
+      <h1>Map Section</h1>
     </div>
   );
 }
